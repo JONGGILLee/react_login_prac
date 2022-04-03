@@ -2,8 +2,10 @@
 
 import React from "react";
 
-import Grid from "../elements/Grid";
-import Image from "../elements/Image";
+// import Grid from "../elements/Grid";
+// import Image from "../elements/Image";
+// import Text from "../elements/Text";
+import { Grid, Text, Image } from "../elements/index";
 
 const Post = (props) => {
   return (
@@ -11,12 +13,18 @@ const Post = (props) => {
       <Grid>
         <Grid is_flex>
           <Image shape="circle" src={props.src} />
+          <Text bold>{props.user_info.user_name}</Text>
+          <Text bold>{props.insert_dt}</Text>
         </Grid>
-        <Grid padding="16px"></Grid>
+        <Grid padding="16px">
+          <Text> {props.contents}</Text>
+        </Grid>
         <Grid>
           <Image shape="rectangle" src={props.src} />
         </Grid>
-        <Grid padding="16px"></Grid>
+        <Grid padding="16px">
+          <Text bold>댓글 개수는 {props.comment_cnt}개 입니다.</Text>
+        </Grid>
         <div>user profile / user name / insert_date</div>
         <div>contents</div>
         <div>image</div>

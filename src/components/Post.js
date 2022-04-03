@@ -2,16 +2,18 @@
 
 import React from "react";
 
+import Grid from "../elements/Grid";
+
 const Post = (props) => {
   console.log(props);
   return (
     <React.Fragment>
-      <div>
+      <Grid padding="14px">
         <div>user profile / user name / insert_date / is_me (edit btn)</div>
         <div>contents</div>
         <div>image</div>
         <div>comment count</div>
-      </div>
+      </Grid>
     </React.Fragment>
   );
 };

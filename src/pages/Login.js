@@ -27,12 +27,12 @@ const Login = (props) => {
             }}
           />
         </Grid>
-        {/* <Button
+        <Button
           text="로그인하기"
           _onClick={() => {
-            console.log("로그인 했어!");
+            console.log("로그인 했습니다!");
           }}
-        ></Button> */}
+        ></Button>
       </Grid>
     </React.Fragment>
   );

@@ -3,9 +3,26 @@ import React from "react";
 import styled from "styled-components";
 
 const Button = (props) => {
-  return <React.Fragment></React.Fragment>;
+  const { text, _onClick } = props;
+  return (
+    <React.Fragment>
+      <ElButton onClick={_onClick}>{text}</ElButton>
+    </React.Fragment>
+  );
 };
 
-Button.defaultProps = {};
+Button.defaultProps = {
+  text: "텍스트",
+  _onClick: () => {},
+};
+
+const ElButton = styled.button`
+  width: 100%;
+  background-color: #efcd8e;
+  color: #ffffff;
+  padding: 12px 0px;
+  box-sizing: border-box;
+  border: none;
+`;
 
 export default Button;

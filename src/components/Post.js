@@ -43,7 +43,7 @@ Post.defaultProps = {
   },
   image_url:
     "https://cdn.pixabay.com/photo/2016/02/21/18/09/iceland-1214063__340.jpg",
-  contents: "저작권 없는 이미지파일입니다.",
+  contents: "저작권 없는 이미지파일입니다.~",
   comment_cnt: 15,
   insert_dt: "2022-04-02 10:00:00",
 };

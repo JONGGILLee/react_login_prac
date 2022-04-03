@@ -8,7 +8,7 @@ const Header = (props) => {
       <Grid is_flex padding="3px 16px">
         <Grid>
           <Text margin="0px" size="25px" bold>
-            시행
+            시행 FB
           </Text>
         </Grid>
         <Grid is_flex>

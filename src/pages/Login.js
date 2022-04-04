@@ -41,8 +41,9 @@ const Login = (props) => {
             console.log("로그인 했습니다!");
 
             login();
-
-            deleteCookie("user_id");
+            // 누르면 쿠키를 저장.
+            // deleteCookie("user_id");
+            // 누르면 user_id 쿠키를 삭제.
           }}
         ></Button>
       </Grid>
